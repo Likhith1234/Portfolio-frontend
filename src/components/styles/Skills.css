@@ -1,0 +1,47 @@
+.skills-container {
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+    padding-top: 5.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../images/others-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.skills-card {
+    width: 60%;
+    background: lightsteelblue;
+    border: 2px solid lime;
+    border-radius: .3em;
+    box-shadow: .1em .1em rgb(206, 206, 247);
+    padding: 1em;
+    line-height: 2.5em;
+    display: grid;
+}
+
+.progress-bar {
+    height: 2.79em;
+    margin: 1em;
+    min-width: 10%;
+    flex-grow: 1;
+    border: .2em dotted black;
+    position: relative;
+}
+
+.progress-shade {
+    position: absolute;
+    background: limegreen;
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+@media screen and (max-width:768px) {
+    .skills-container {
+        background-size: 100vw 100vh;
+    }
+}
